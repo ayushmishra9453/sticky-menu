@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Menu</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width: 200px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+           
+        }
+        #menu-bar ul{
+            margin: 0px;
+        }
+        #menu-bar ul li{
+             display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            margin: 0px 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #about-img{
+            width: 90%;
+            height: 500px;
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+    </style>
+
+    <script>
+        window.addEventListener('scroll',function(){
+            let navbar=document.getElementById("menu-bar")
+            if(window.pageYOffset >=214){
+            navbar.classList.add('sticky')
+            }
+           else{
+            navbar.classList.remove('sticky')
+           }
+
+        })
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <img src="https://thumbs.dreamstime.com/z/health-nature-care-logo-health-nature-hand-care-family-people-logo-vector-image-108793475.jpg?w=576" id="logo" alt="">
+    </div>
+    <nav id="menu-bar">
+         <ul > 
+            <li>Home</li>
+            <li>About</li>
+            <li>Our Team</li>
+            <li>Client</li>
+            <li>Contact Us</li>
+        </ul> 
+    </nav>
+    <div id="container">
+        <h1>About Us</h1>
+        <img id="about-img" src="https://thumbs.dreamstime.com/z/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg?w=992" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptatibus soluta. Aperiam, rerum similique. Consequuntur sit voluptatem sunt eius sequi veniam unde. Molestiae tempore omnis asperiores odio quis perferendis, voluptas ut laborum. Dignissimos facilis, omnis eveniet alias quis doloribus, perferendis ullam inventore consequatur nobis minus delectus qui fuga aperiam aliquid. Et beatae hic at praesentium obcaecati corrupti repellendus enim corporis nulla soluta placeat, delectus sint nam deleniti quod nesciunt sed, perferendis ut similique repellat alias totam facere! Natus quos, sit repudiandae veritatis laborum similique vitae quibusdam molestias itaque? Unde, sed nesciunt consectetur perferendis sit blanditiis molestiae omnis, veritatis officia nisi rem, eligendi distinctio consequuntur ducimus nostrum doloribus excepturi dolorem dignissimos delectus! Architecto culpa corporis, facere error sapiente perspiciatis eius consectetur ratione ducimus quisquam a dignissimos inventore illo velit quam facilis expedita? Non a, repellat, doloribus mollitia quam quasi minima libero nisi molestias omnis laudantium voluptatem ipsam quisquam modi accusamus obcaecati! Cum, aperiam. Doloribus ipsum fugiat odio, voluptatem, at officiis qui necessitatibus minima totam sint expedita similique repudiandae modi blanditiis dicta tempora dolores sequi pariatur dolor. Atque iure ad, non tempore quis praesentium, fuga animi doloremque sequi magnam doloribus modi culpa quos odio id eos a, rerum ducimus? Veritatis soluta nesciunt minus ut quo, ad nihil expedita quidem iusto possimus quaerat veniam magni excepturi nostrum consequuntur velit similique aperiam quod consectetur, eius asperiores officia rerum quos itaque! Tempore optio magnam excepturi aliquam, atque iusto fuga itaque pariatur incidunt id, nisi praesentium vel maxime quaerat voluptatum minima magni quo neque sed inventore. Alias fugiat, ipsam recusandae suscipit mollitia dignissimos magnam similique ducimus rem molestias labore rerum eligendi accusamus amet cupiditate error modi ullam fuga eaque. Illo nihil dolorem facere voluptatum, voluptate laudantium exercitationem consequatur corporis odio? Nihil nemo pariatur quisquam quia aspernatur, saepe rem obcaecati excepturi eligendi debitis eius? Reiciendis repellendus doloremque ut officia ullam laboriosam ipsam minima incidunt tenetur at nobis quas, placeat vero quam, illum molestias ducimus necessitatibus facilis similique dignissimos nemo itaque repellat. Totam, eaque eum. Consequatur adipisci laudantium unde? Natus vitae reiciendis aliquid culpa inventore ullam, accusantium, quos adipisci quidem cumque maxime placeat ea, qui cupiditate. Sint repudiandae aspernatur hic? Minima est asperiores numquam tempore earum consequuntur eius quaerat dolores incidunt debitis nulla cumque laudantium eligendi labore nihil obcaecati, repellat in reiciendis optio vel? Quod quo nisi dolorum dignissimos amet laboriosam placeat in sapiente reprehenderit, incidunt voluptate ad laudantium quia minus expedita molestias totam nostrum assumenda eos. Natus ratione dicta expedita cum ipsum, tempore corrupti laboriosam temporibus eius dolor harum ea a quae accusamus iste, doloremque repellat aspernatur earum officiis nulla hic esse quia? Dignissimos voluptas amet reiciendis enim nihil ducimus voluptatem quam minus dolor necessitatibus odit repellat cupiditate, repellendus soluta consequuntur dolorum molestias ex accusamus quidem? Porro aliquid voluptas quam at autem quae maiores nam temporibus, numquam incidunt nihil! Voluptate quos nam amet commodi, numquam ducimus ad repellendus dolorum vel nisi officia ipsum eligendi quas repellat saepe error, exercitationem corrupti quia eius, odio quibusdam quis suscipit voluptatibus. Exercitationem eius, dolorum repudiandae corporis non accusamus amet perspiciatis enim.</p>
+    </div>
+</body>
+</html>
